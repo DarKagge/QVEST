@@ -142,7 +142,8 @@ header {
 .green-form {
   background: url("../img/bg-formu.png");
   width: 86%;
-  float: right; }
+  float: right;
+  min-height: 145px; }
 
 .green-form p {
   color: white;
@@ -163,7 +164,7 @@ header {
   font-weight: 700;
   line-height: 33px;
   text-transform: uppercase;
-  padding: 15px 9px 18px 6px; }
+  padding: 25px 9px 18px 6px; }
 
 .form-opacity {
   border-bottom: 3px solid #fff;
@@ -175,7 +176,8 @@ header {
     font-size: 16px;
     font-weight: 400;
     line-height: 33px;
-    padding: 7px 91px 8px 39px;
+    padding: 4px 0px 5px 39px;
+    margin: 15px 14px 15px 0;
     background-color: white;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -183,13 +185,20 @@ header {
     .form-opacity input[name="name"] {
       background-image: url("../img/name.png");
       background-repeat: no-repeat;
-      background-position: 0 1px; }
+      background-position: 5px 8px; }
     .form-opacity input[name="phone"] {
       background-image: url("../img/phone.png");
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background-position: 5px 8px; }
   .form-opacity button {
-    width: 418px;
-    height: 40px;
+    padding: 13px 128px 13px 125px;
+    margin-bottom: 16px;
     background-color: #61b27c;
     -webkit-border-radius: 3px;
-    border-radius: 3px; }
+    border-radius: 3px;
+    color: white;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase; }
