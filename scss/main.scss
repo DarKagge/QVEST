@@ -35,9 +35,8 @@ body textarea:required:valid{
 
 .title-qvest{
     color: white;
-    font-family: Gilroy;
+    font-family: Gilroybold;
     font-size: 36px;
-    font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
     padding-top: 33px;
@@ -81,28 +80,26 @@ body textarea:required:valid{
     }
     h3{
         color: white;
-        font-family: Gilroy;
+        font-family: Gilroybold;
         font-size: 30px;
-        font-weight: 700;
         line-height: 24px;
         text-transform: uppercase;
-        padding: 19px 0 0 18px;
+        padding: 18px 0 0 26px;
     }
     h2{
         color: #61b27c;
-        font-family: Gilroy;
+        font-family: Gilroybold;
         font-size: 18px;
-        font-weight: 700;
         line-height: 24px;
         text-transform: uppercase;
-        padding: 8px 0 0 20px;
+        padding: 6px 0 0 27px;
     }
     p{
         color: white;
         font-family: HelveticaNeueCyr;
         font-size: 18px;
         font-weight: 500;
-        padding: 44px 0 0 21px;
+        padding: 35px 0 0 26px;
         max-width: 245px;
         line-height: 21px;
     }
@@ -117,9 +114,9 @@ body textarea:required:valid{
     padding: 28px 0 0 0;
     text-align: center;
     color: white;
-    font-family: HelveticaNeueCyr;
+    font-family: HelveticaNeueCyrbold;
     font-size: 18px;
-    font-weight: 700;
+
 
 }
 .item-select .item-select_button{
@@ -146,8 +143,57 @@ body textarea:required:valid{
         background: #FFFFFF;
     }
 }
+.footer{
+  background-image: url("../img/footer.png");
+  background-size: cover;
+  min-height: 279px;
+  margin-top: 90px;
+  p{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #fff;
+    line-height: 23px;
+    font-family: Gilroybold;
+  }
+}
+.footer-left{
+  position: absolute;
+  top: 88px;
+  left: 44px;
+}
+.footer-mid{
+  position: absolute;
+  top: 47px;
+  left: 39%;
 
-
+}
+.social_footer{
+  position: relative !important;
+  top: 7px;
+  a{
+    background-image: url(../img/footer_socila.png);
+  }
+}
+.footet-right{
+  position: absolute;
+  top: 91px;
+  right: 29px;
+  text-align: right;
+  h3{
+    color: white;
+    font-family: Gilroybold;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  h2{
+    color: white;
+    font-family: Gilroy;
+    font-size: 30px;
+    line-height: 33px;
+    text-transform: uppercase;
+  }
+}
 @media only screen and (max-width : 991px) {
     .gamburger {
         display: block;

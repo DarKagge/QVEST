@@ -11,7 +11,7 @@
   src: url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroybold";
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype"); }
@@ -21,3 +21,9 @@
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HelveticaNeueCyrbold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeueCyrBold/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyrBold/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyrBold/HelveticaNeueCyr-Bold.ttf") format("truetype"); }
