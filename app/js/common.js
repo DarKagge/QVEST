@@ -14,7 +14,20 @@ $(function() {
 
 	// fancybox
 	$("a.modal").fancybox();
+	$('.city-main').on('click', function(e){
+
+
+
+
+		$(this).toggleClass('clicked');
+
+
+
+
+	});
 });
+
+
 
 //Форма отправки 2.0
 $(function() {

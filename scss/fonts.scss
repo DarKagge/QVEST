@@ -2,3 +2,5 @@
 
 @include font-face("RobotoRegular", "../fonts/RobotoRegular/RobotoRegular", $file-formats: eot woff ttf);
 @include font-face("Gilroy", "../fonts/Gilroy/Gilroy-Regular", $file-formats:  ttf);
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-Bold", $file-formats:  ttf);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium", $file-formats:  eot woff ttf);

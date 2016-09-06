@@ -55,21 +55,26 @@
 
 <body>
 	<div class="header-top">
+		<div class="city">
+			<div class="city-main">
+				<p>Ваш город:</p>
+				<h2>самара</h2>
+			</div>
+			<div class="city-menu">
+				<a href="#">Москва</a>
+				<a href="#">Санкт-петербург</a>
+				<a href="#">Псков</a>
+			</div>
+		</div>
 		<div class="inner">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-2">
-									<div class="city">
-										<p>Ваш город</p>
-										<h2>самара</h2>
-									</div>
-								</div>
-					<div class="col-md-2">
+					<div class="col-md-3">
 									<div class="logo">
 										<a href="#"><img src="img/logo.png" alt="Logo"></a>
 									</div>
 								</div>
-					<div class="col-md-6">
+					<div class="col-md-9">
 									<div class="top-menu">
 										<ul>
 											<li><a href="#">написать нам</a></li>
@@ -79,19 +84,20 @@
 										</ul>
 									</div>
 								</div>
-					<div class="col-md-2">
-									<div class="social">
-										<ul>
-											<li ><a href="#" class="bg-position_1"></a></li>
-											<li ><a href="#"  class="bg-position_2"></a></li>
-											<li ><a href="#" class="bg-position_3"></a></li>
-										</ul>
-									</div>
-
-								</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="social">
+			<ul>
+				<li ><a href="#" class="bg-position_1"></a></li>
+				<li ><a href="#"  class="bg-position_2"></a></li>
+				<li ><a href="#" class="bg-position_3"></a></li>
+			</ul>
+		</div>
+		<a href="#" class="taxi-button">
+			бесплатное taxi<br>до квеста
+		</a>
 	</div>
 	<header>
 		<div class="inner">
@@ -104,22 +110,16 @@
 								<p>эмоции обеспеченны</p>
 								<p>проверенно на людях </p>
 							</div>
-							<div class="forma">
-								<div class="row">
-									<div class="col-md-3">
-										<div class="green-form">
-											<p>забронировать игру</p>
-											<h3>215-06-07</h3>
-										</div>
-									</div>
-									<div class="col-md-9">
-										<div class="form-opacity">
-											<input type="text" name="name" placeholder="Ваше имя">
-											<input type="text" name="phone" placeholder="Ваш телефон">
-											<button>заказать звонок</button>
-										</div>
-									</div>
-								</div>
+						</div>
+						<div class="forma">
+							<div class="green-form">
+								<p>забронировать игру</p>
+								<h3>215-06-07</h3>
+							</div>
+							<div class="form-opacity">
+								<input type="text" name="name" placeholder="Ваше имя">
+								<input type="text" name="phone" placeholder="Ваш телефон">
+								<button class="button-green">заказать звонок</button>
 							</div>
 						</div>
 					</div>
@@ -127,7 +127,104 @@
 			</div>
 		</div>
 	</header>
+	<div class="all-qvest">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="title-qvest">
+							<h2>Наши квесты</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="forma ">
+							<div class="green-form forma_games">
+								<p>телефон</p>
+								<h3>215-06-07</h3>
+							</div>
+							<div class="form-opacity form_gray">
+								<input type="text" name="name" placeholder="Ваше имя">
+								<input type="text" name="phone" placeholder="Ваш телефон">
+								<button class="button-green">забронировать игру</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+	</div>
+	<div class="qvest-items">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="item-select " >
+							<h3>эксперимент</h3>
+							<h2>квест-театр</h2>
+							<p>Единственный квест-театр в Самаре.</p>
+							<div class="item-select__players ">
+								<span>3-5</span>
+							</div>
+
+							<button class="button-green item-select_button">забронировать квест online</button>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item-select">
+							<h3>карантин</h3>
+							<h2>экшен-квест</h2>
+							<p>500 м2 адреналина и страха. Никаких ребусов и загадок, только хардкор.</p>
+							<div class="item-select__players ">
+								<span>2-7</span>
+							</div>
+
+							<button class="button-green item-select_button">забронировать квест online</button>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item-select ">
+							<h3>эксперимент</h3>
+							<h2>квест-театр</h2>
+							<p>Единственный квест-театр в Самаре.</p>
+							<div class="item-select__players ">
+								<span>3-5</span>
+							</div>
+
+							<button class="button-green item-select_button">забронировать квест online</button>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item-select ">
+							<h3>эксперимент</h3>
+							<h2>квест-театр</h2>
+							<p>Единственный квест-театр в Самаре.</p>
+							<div class="item-select__players ">
+								<span>3-5</span>
+							</div>
+
+							<button class="button-green item-select_button">забронировать квест online</button>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item-select ">
+							<h3>эксперимент</h3>
+							<h2>квест-театр</h2>
+							<p>Единственный квест-театр в Самаре.</p>
+							<div class="item-select__players ">
+								<span>3-5</span>
+							</div>
+
+							<button class="button-green item-select_button">забронировать квест online</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
 
 
 	<div class="hidden">
