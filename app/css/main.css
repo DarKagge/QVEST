@@ -42,7 +42,28 @@ body textarea:required:valid {
   min-height: 252px;
   background-size: cover;
   position: relative;
-  margin: 0 46px 38px 0px; }
+  margin: 0 8px 38px 7px; }
+  .item-select * {
+    position: relative;
+    z-index: 2; }
+  .item-select:after {
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all; }
+  .item-select:hover:after {
+    opacity: 1;
+    visibility: visible; }
+  .item-select span {
+    font-size: 18px; }
   .item-select h3 {
     color: white;
     font-family: Gilroy;
@@ -64,7 +85,9 @@ body textarea:required:valid {
     font-family: HelveticaNeueCyr;
     font-size: 18px;
     font-weight: 500;
-    padding: 44px 0 0 21px; }
+    padding: 44px 0 0 21px;
+    max-width: 245px;
+    line-height: 21px; }
 
 .item-select__players {
   position: absolute;
@@ -87,7 +110,7 @@ body textarea:required:valid {
   bottom: 18px; }
 
 .qvest-items {
-  margin-top: 52px; }
+  margin-top: 34px; }
 
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
