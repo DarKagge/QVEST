@@ -53,6 +53,7 @@ body textarea:required:valid{
         position: relative;
         z-index: 2;
     }
+    padding: 0 26px;
     min-height: 252px;
     background-size: cover;
     position: relative;
@@ -84,7 +85,7 @@ body textarea:required:valid{
         font-size: 30px;
         line-height: 24px;
         text-transform: uppercase;
-        padding: 18px 0 0 26px;
+        padding: 18px 0 0 0px;
     }
     h2{
         color: #61b27c;
@@ -92,16 +93,17 @@ body textarea:required:valid{
         font-size: 18px;
         line-height: 24px;
         text-transform: uppercase;
-        padding: 6px 0 0 27px;
+        padding: 6px 0 0 0px;
     }
     p{
         color: white;
         font-family: HelveticaNeueCyr;
         font-size: 18px;
         font-weight: 500;
-        padding: 35px 0 0 26px;
+        padding: 27px 0 0 0px;
         max-width: 245px;
         line-height: 21px;
+        min-height: 111px;
     }
 }
 .item-select__players{
@@ -120,11 +122,9 @@ body textarea:required:valid{
 
 }
 .item-select .item-select_button{
-    $item-select_button: 2.4%;
-    width: 100% - $item-select_button*2;
-    margin: 0 $item-select_button;
+    width: 100%;
     position: absolute;
-    bottom: 18px;
+    top: 4px;
 }
 .qvest-items{
     margin-top: 34px;
@@ -140,7 +140,7 @@ body textarea:required:valid{
         width: 100%;
         height: 4px;
         margin-bottom: 4px;
-        background: #FFFFFF;
+        background: #000;
     }
 }
 .footer{
@@ -157,26 +157,35 @@ body textarea:required:valid{
   }
 }
 .footer-left{
-  position: absolute;
-  top: 88px;
-  left: 44px;
+  position: relative;
+  margin-top: 88px;
+  margin-left: 44px;
 }
 .footer-mid{
-  position: absolute;
+  position: relative;
   top: 47px;
-  left: 39%;
+  left: auto;
+  text-align: center;
 
 }
-.social_footer{
-  position: relative !important;
+.social.social_footer{
+  position: relative;
   top: 7px;
+  right: auto;
+  text-align: center;
+  li{
+    float: none;
+    display: inline-block;
+    margin: 0 5.5px;
+  }
   a{
     background-image: url(../img/footer_socila.png);
   }
 }
 .footet-right{
-  position: absolute;
-  top: 91px;
+  position: relative;
+  margin-top: 91px;
+  margin-bottom: 5px;
   right: 29px;
   text-align: right;
   h3{
@@ -193,26 +202,6 @@ body textarea:required:valid{
     line-height: 33px;
     text-transform: uppercase;
   }
-}
-@media only screen and (max-width : 991px) {
-    .gamburger {
-        display: block;
-        span {
-            transition: .4s all;
-        }
-        &.active {
-
-            span:first-child {
-                transform: rotate(45deg) translateX(6px) translateY(6px);
-            }
-            span:nth-child(2) {
-                transform: rotate(-45deg) translateX(-1px) translateY(0px);
-            }
-            span:last-child {
-                opacity: 0;
-            }
-        }
-    }
 }
 //ALWAYS END
 @import "media.scss";

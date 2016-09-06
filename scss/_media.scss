@@ -14,34 +14,54 @@
 		float: left;
 	}
 	.logo {
-		max-width: 197px;
+		max-width: unset;
 		padding: 26px 15px;
 	}
 }
 @media only screen and (max-width : 1540px) {
 	.logo {
-		max-width: 197px;
 		padding: 26px 50px;
 	}
 }
 @media only screen and (max-width : 1440px) {
 	.logo {
-		max-width: 197px;
 		padding-top: 26px;
 		a{
-			padding-left: 62px;
+			padding-left: 0px;
 		}
 	}
 }
-@media only screen and (max-width : 1250px) {
-	.top-menu{
-		visibility: hidden;
+@media only screen and (max-width : 1387px) {
+	.city{
+		top: 110px;
+		color: #fff;
 	}
+	.city .city-menu a{
+		background-color: rgba(0,0,0,0.8);
+		margin-bottom: 5px;
+	}
+}
+@media only screen and (max-width : 1250px) {
+
 }
 @media only screen and (max-width : 1200px) {
 	.qvest-items__width{
 		max-width: 600px;
 		margin: 0 auto;
+	}
+}
+@media only screen and (max-width : 1166px) {
+	.top-menu li{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+@media only screen and (max-width : 1086px) {
+	.top-menu li a{
+		font-size: 14px;
+	}
+	.logo {
+		padding: 26px 00px;
 	}
 }
 
@@ -73,15 +93,57 @@
 			display: block;
 		}
 	}
+	.top-menu{
+		visibility: hidden;
+		opacity: 0;
+		transform: scale(0);
+		position: absolute;
+		top: 91px;
+		right: 0;
+		background: #fff;
+		z-index: 2;
+		transition: .2s all;
+		li{
+			padding: 10px  10px;
+		}
+		&.active{
+			visibility: visible;
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+	.gamburger {
+		display: block;
+		position: absolute;
+		right: 20%;
+		span {
+			transition: .4s all;
+		}
+		&.active {
+
+			span:first-child {
+				transform: rotate(45deg) translateX(6px) translateY(6px);
+			}
+			span:nth-child(2) {
+				transform: rotate(-45deg) translateX(-1px) translateY(0px);
+			}
+			span:last-child {
+				opacity: 0;
+			}
+		}
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.gamburger{
+		right: 45%;
+	}
 	.green-form {
 		max-height: 114px;
 		width: 300px;
 		position: relative;
-		margin: 15px 125px;
+		margin: 15px auto;
 	}
 	.form-opacity {
 		border: 3px solid #fff;
@@ -96,7 +158,7 @@
 		}
 	}
 	.form-opacity button {
-		margin: 4px 111px;
+		margin: 4px auto;
 	}
 	.bg-h1 h1{
 		font-size: 55px;
@@ -114,23 +176,32 @@
 		width: 220px;
 		text-align: right;
 		min-height: 81px;
-		margin: 15px 216px;
+		left: auto;
+	}
+	.footer{
+		background-size: cover;
 	}
 }
+@media only screen and (max-width : 701px) {
+	.gamburger{
+		right: 65%;
+	}
+}
+
 @media only screen and (max-width : 600px) {
 	.bg-h1 h1{
 		font-size: 35px;
 	}
 }
 @media only screen and (max-width: 550px){
-	.green-form {
-		margin: 15px 92px;
-	}
-	.green-form.forma_games {
-		margin: 15px 170px;
+	.gamburger{
+		right: 10%;
 	}
 	.social{
 		visibility: hidden;
+		&.social_footer{
+			visibility: visible;
+		}
 	}
 }
 /* Extra Small Devices, Phones */
@@ -174,6 +245,35 @@
 @media only screen and (max-width: 430px){
 
 }
+@media only screen and (max-width: 414px){
+	.green-form {
+		width: 215px;
+		margin: 15px auto;
+	}
+	.form-opacity button {
+		margin: 7px auto;
+	}
+	.green-form.forma_games {
+		margin: 15px auto;
+	}
+	.item-select{
+		padding-bottom: 20px;
+		span{
+			display: block;
+		}
+		h3{
+			font-size: 25px;
+		}
+		h2{
+			font-size: 16px;
+		}
+		.item-select_button{
+			font-size: 14px;
+			position: relative;
+		}
+	}
+
+}
 @media only screen and (max-width: 380px){
 	.green-form {
 		width: 215px;
@@ -183,24 +283,12 @@
 		margin: 7px 62px;
 	}
 	.green-form.forma_games {
-		margin: 15px 105px;
+		margin: 15px auto;
 	}
 	.form-opacity button {
 		margin: 7px 69px;
 	}
 	.bg-h1 h1 {
 		font-size: 23px;
-	}
-}
-@media only screen and (max-width: 350px){
-	.green-form {
-		width: 215px;
-		margin: 15px 37px;
-	}
-	.form-opacity button {
-		margin: 7px 56px;
-	}
-	.green-form.forma_games {
-		margin: 15px 72px;
 	}
 }
