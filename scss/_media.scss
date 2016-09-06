@@ -2,6 +2,37 @@
 @import "vars.scss";
 
 /* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1700px) {
+	.social{
+		right: 0%;
+	}
+}
+
+@media only screen and (max-width : 1620px) {
+	.top-menu ul{
+		float: left;
+	}
+	.logo {
+		max-width: 197px;
+		padding: 26px 15px;
+	}
+}
+@media only screen and (max-width : 1540px) {
+	.logo {
+		max-width: 197px;
+		padding: 26px 50px;
+	}
+}
+@media only screen and (max-width : 1440px) {
+	.logo {
+		max-width: 197px;
+		padding-top: 26px;
+		a{
+			padding-left: 62px;
+		}
+	}
+}
 @media only screen and (max-width : 1200px) {
 
 }

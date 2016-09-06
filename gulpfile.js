@@ -30,7 +30,7 @@ gulp.task('browser-sync', ['styles', 'scripts'], function() {
 });
 
 gulp.task('styles', function () {
-	return gulp.src('scss/*.scss')
+	return gulp.src('scss/**/*.scss')
 	.pipe(sass({
 		includePaths: require('node-bourbon').includePaths
 	}).on('error', sass.logError))
@@ -58,7 +58,7 @@ gulp.task('common', function() {
 });
 
 gulp.task('watch', function () {
-	gulp.watch('scss/*.scss', ['styles']);
+	gulp.watch('scss/**/*.scss', ['styles']);
 	gulp.watch('app/libs/**/*.js', ['scripts']);
 	gulp.watch('app/js/*.js').on("change", browserSync.reload);
 	gulp.watch('app/*.html').on('change', browserSync.reload);
