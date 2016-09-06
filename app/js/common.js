@@ -16,16 +16,24 @@ $(function() {
 	$("a.modal").fancybox();
 	$('.city-main').on('click', function(e){
 		$(this).toggleClass('clicked');
+		$('.gamburger').removeClass('active');
+		$(".top-menu").removeClass('active');
 	});
 	$('.gamburger').on('click',function(){
 		$(this).toggleClass('active');
 		$(".top-menu").toggleClass('active');
+		$(".city-main").removeClass('clicked');
 	});
 
 	$(document).on("click",function(event){
-		if( $(event.target).closest(".top-menu,.gamburger").length )return;
-		$('.gamburger').toggleClass('active');
-		$(".top-menu").toggleClass('active');
+		if(
+			$(event.target).closest(".top-menu").length ||
+			$(event.target).closest(".gamburger").length ||
+			$(event.target).closest(".city").length
+		)return;
+		$('.gamburger').removeClass('active');
+		$(".top-menu").removeClass('active');
+		$(".city-main").removeClass('clicked');
 		event.stopPropagation();
 	});
 });
