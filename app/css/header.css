@@ -68,9 +68,8 @@ header {
     left: 7px; }
     .city .city-menu a {
       color: #fffefe;
-      font-family: Gilroy;
+      font-family: Gilroybold;
       font-size: 18px;
-      font-weight: 700;
       line-height: 24px;
       border-bottom: 2px solid #00b37a;
       display: block;
@@ -80,8 +79,7 @@ header {
     visibility: visible;
     opacity: 1; }
   .city p {
-    font-family: Gilroy;
-    font-weight: 700;
+    font-family: Gilroybold;
     line-height: 24px;
     font-size: 16px;
     display: block; }
@@ -90,8 +88,7 @@ header {
       display: block; }
   .city h2 {
     font-size: 24px;
-    font-family: Gilroy;
-    font-weight: 700;
+    font-family: Gilroybold;
     text-transform: uppercase;
     line-height: 17px; }
     .city h2:hover {
@@ -107,9 +104,8 @@ header {
 
 .top-menu a {
   color: #212121;
-  font-family: Gilroy;
+  font-family: Gilroybold;
   font-size: 16px;
-  font-weight: 700;
   text-transform: uppercase; }
   .top-menu a:hover {
     text-decoration: none; }
@@ -157,17 +153,15 @@ header {
 
 .bg-h1 h1 {
   color: white;
-  font-family: Gilroy;
+  font-family: Gilroybold;
   font-size: 72px;
-  font-weight: 700;
   text-transform: uppercase;
   margin: 0px; }
 
 .form-text p {
   color: white;
-  font-family: Gilroy;
+  font-family: Gilroybold;
   font-size: 24px;
-  font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
   vertical-align: middle; }
@@ -220,9 +214,8 @@ header {
 
 .green-form p {
   color: white;
-  font-family: Gilroy;
+  font-family: Gilroybold;
   font-size: 17px;
-  font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
   text-align: right;
@@ -232,9 +225,8 @@ header {
 
 .green-form h3 {
   color: white;
-  font-family: Gilroy;
+  font-family: Gilroybold;
   font-size: 30px;
-  font-weight: 700;
   line-height: 33px;
   text-transform: uppercase;
   padding: 11px 9px 13px 6px; }
@@ -291,9 +283,8 @@ header {
   min-height: 65px;
   min-width: 194px;
   color: #202427;
-  font-family: Gilroy;
+  font-family: Gilroybold;
   font-size: 16px;
-  font-weight: 700;
   line-height: 15px;
   text-transform: uppercase;
   text-align: left;
