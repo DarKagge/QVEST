@@ -15,15 +15,18 @@ $(function() {
 	// fancybox
 	$("a.modal").fancybox();
 	$('.city-main').on('click', function(e){
-
-
-
-
 		$(this).toggleClass('clicked');
+	});
+	$('.gamburger').on('click',function(){
+		$(this).toggleClass('active');
+		$(".top-menu").toggleClass('active');
+	});
 
-
-
-
+	$(document).on("click",function(event){
+		if( $(event.target).closest(".top-menu,.gamburger").length )return;
+		$('.gamburger').toggleClass('active');
+		$(".top-menu").toggleClass('active');
+		event.stopPropagation();
 	});
 });
 

@@ -54,7 +54,6 @@ body textarea:required:valid{
         position: relative;
         z-index: 2;
     }
-    min-width: 577px;
     min-height: 252px;
     background-size: cover;
     position: relative;
@@ -133,7 +132,42 @@ body textarea:required:valid{
 .qvest-items{
     margin-top: 34px;
 }
+.gamburger{
+    display: none;
+    width: 25px;
+    position: absolute;
+    right: 15px;
+    top: 47px;
+    span{
+        display: block;
+        width: 100%;
+        height: 4px;
+        margin-bottom: 4px;
+        background: #FFFFFF;
+    }
+}
 
+
+@media only screen and (max-width : 991px) {
+    .gamburger {
+        display: block;
+        span {
+            transition: .4s all;
+        }
+        &.active {
+
+            span:first-child {
+                transform: rotate(45deg) translateX(6px) translateY(6px);
+            }
+            span:nth-child(2) {
+                transform: rotate(-45deg) translateX(-1px) translateY(0px);
+            }
+            span:last-child {
+                opacity: 0;
+            }
+        }
+    }
+}
 //ALWAYS END
 @import "media.scss";
 @import "sketches.scss";
