@@ -77,17 +77,130 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	.green-form {
+		max-height: 114px;
+		width: 300px;
+		position: relative;
+		margin: 15px 125px;
+	}
+	.form-opacity {
+		border: 3px solid #fff;
+		max-height: 112px;
+		margin-top: 22px;
+		padding: 0;
+		text-align: center;
+	}
+	.form-opacity{
+		.button-green{
+			width: 60%;
+		}
+	}
+	.form-opacity button {
+		margin: 4px 111px;
+	}
+	.bg-h1 h1{
+		font-size: 55px;
+	}
+	.form-text p{
+		font-size: 20px;
+	}
+	.form-opacity.form_gray{
+		padding: 0;
+	}
+	.form-opacity.form_gray input[name="name"] {
+		margin: 15px 0px;
+	}
+	.green-form.forma_games {
+		width: 220px;
+		text-align: right;
+		min-height: 81px;
+		margin: 15px 216px;
+	}
 }
-
+@media only screen and (max-width : 600px) {
+	.bg-h1 h1{
+		font-size: 35px;
+	}
+}
+@media only screen and (max-width: 550px){
+	.green-form {
+		margin: 15px 92px;
+	}
+	.green-form.forma_games {
+		margin: 15px 170px;
+	}
+	.social{
+		visibility: hidden;
+	}
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.pad{
 		padding: 20px 5px !important;
+	}
+	.green-form {
+		margin: 15px 65px;
+	}
+	.form-opacity input[name="name"] {
+		margin: 6px 1px;
+	}
+	.form-opacity {
+		max-height: 175px;
+	}
+	.bg-h1 h1 {
+		font-size: 30px;
+	}
+	.form-opacity button {
+		margin: 7px 77px;
+	}
+	.green-form {
+		width: 215px;
+		margin: 15px 90px;
+	}
+	.green-form.forma_games {
+		margin: 15px 144px;
+	}
+	.title-qvest{
+		h2{
+			font-size: 30px;
+		}
 	}
 	// 100% ширина окна
 	// .fancybox-wrap{
 	// 	width: 100% !important;
 	// 	left: 0 !important;
 	// }
+}
+@media only screen and (max-width: 430px){
+
+}
+@media only screen and (max-width: 380px){
+	.green-form {
+		width: 215px;
+		margin: 15px 62px;
+	}
+	.form-opacity button {
+		margin: 7px 62px;
+	}
+	.green-form.forma_games {
+		margin: 15px 105px;
+	}
+	.form-opacity button {
+		margin: 7px 69px;
+	}
+	.bg-h1 h1 {
+		font-size: 23px;
+	}
+}
+@media only screen and (max-width: 350px){
+	.green-form {
+		width: 215px;
+		margin: 15px 37px;
+	}
+	.form-opacity button {
+		margin: 7px 56px;
+	}
+	.green-form.forma_games {
+		margin: 15px 72px;
+	}
 }
