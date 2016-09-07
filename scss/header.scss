@@ -65,7 +65,10 @@ header{
 	min-height: 57px;
 	z-index: 2;
 	&:hover{
-
+		background-image: url("../img/citybg.png");
+		background-repeat: no-repeat;
+		background-position: 0 0px;
+		color: #fff;
 
 	}
 	.city-menu{
@@ -95,12 +98,20 @@ header{
 		line-height: 24px;
 		font-size: 16px;
 		display: block;
+		&:hover{
+			color: #fff;
+			display: block;
+		}
 	}
 	h2{
 		font-size: 24px;
 		font-family: Gilroybold;
 		text-transform: uppercase;
 		line-height: 17px;
+		&:hover{
+			color: #fff;
+			display: block;
+		}
 	}
 }
 
