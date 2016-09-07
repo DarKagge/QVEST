@@ -27,38 +27,73 @@
 	.logo {
 		padding-top: 26px;
 		a{
-			padding-left: 0px;
+			padding-left: 40px;
 		}
 	}
 }
 @media only screen and (max-width : 1387px) {
 	.city{
-		top: 110px;
-		color: #fff;
+		top: 15px;
+		left: 8.3%;
 	}
 	.city .city-menu a{
 		background-color: rgba(0,0,0,0.8);
 		margin-bottom: 5px;
 	}
 }
-@media only screen and (max-width : 1250px) {
+@media only screen and (max-width : 1366px){
+	.city{
+		top:110px;
+		color: #fff;
+		left: 8.3%;
+		&:hover{
+			background-image: url("../img/citybg1.png");
+			color: #000a00;
+			p{
+				color: #000a00;
+			}
+			h2{
+				color: #000a00;
+			}
+		}
+	}
+	.taxi-button{
+		right: 0.2%;
+	}
+}
+@media only screen and (max-width : 1277px){
+	.city{
+		left: 8.3%;
+	}
+}
 
+@media only screen and (max-width : 1250px) {
+	.city{
+		left: 7.3%;
+	}
 }
 @media only screen and (max-width : 1200px) {
 	.qvest-items__width{
 		max-width: 600px;
 		margin: 0 auto;
 	}
+	.top-menu a{
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width : 1088px){
+	.city{
+		left: 4.3%;
+	}
 }
 @media only screen and (max-width : 1166px) {
-	.top-menu li{
-		padding-left: 10px;
-		padding-right: 10px;
+	.top-menu a{
+		font-size: 13px;
 	}
 }
 @media only screen and (max-width : 1086px) {
 	.top-menu li a{
-		font-size: 14px;
+		font-size: 11px;
 	}
 	.logo {
 		padding: 26px 00px;
@@ -67,6 +102,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.top-menu a{
+		font-size: 11px;
+	}
 	.wrapper{
 		width: auto;
 	}
@@ -135,7 +173,20 @@
 }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 900px){
+	.city{
+		left: 4.3%;
+	}
+}
+@media only screen and (max-width : 850px){
+	.city{
+		left: 4.3%;
+	}
+}
 @media only screen and (max-width : 768px) {
+	.city{
+		left: 6.3%;
+	}
 	.gamburger{
 		right: 45%;
 	}
@@ -161,7 +212,7 @@
 		margin: 4px auto;
 	}
 	.bg-h1 h1{
-		font-size: 55px;
+		font-size: 50px;
 	}
 	.form-text p{
 		font-size: 20px;
@@ -182,6 +233,16 @@
 		background-size: cover;
 	}
 }
+@media only screen and (max-width : 1086px){
+	.bg-h1.bg-h1_size h1{
+		font-size: 35px;
+	}
+}
+@media only screen and (max-width : 747px){
+	.bg-h1{
+		background-size: 95%;
+	}
+}
 @media only screen and (max-width : 701px) {
 	.gamburger{
 		right: 65%;
@@ -189,8 +250,8 @@
 }
 
 @media only screen and (max-width : 600px) {
-	.bg-h1 h1{
-		font-size: 35px;
+	.bg-h1{
+		background-size: 100%;
 	}
 }
 @media only screen and (max-width: 550px){
@@ -207,9 +268,21 @@
 		right: 0;
 		top: -45px;
 	}
+	.form-text p{
+		font-size: 17px;
+	}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.form-text p{
+		font-size: 15px;
+	}
+	.bg-h1.bg-h1_size h1{
+		font-size: 25px;
+	}
+	.form-text.form-text_hide p{
+		font-size: 17px;
+	}
 	.pad{
 		padding: 20px 5px !important;
 	}
@@ -226,7 +299,7 @@
 		min-height: 400px;
 	}
 	.bg-h1 h1 {
-		font-size: 30px;
+		font-size: 40px;
 	}
 	.form-opacity button {
 		margin: 7px 77px;
@@ -250,7 +323,9 @@
 	// }
 }
 @media only screen and (max-width: 430px){
-
+	.form-text p{
+		font-size: 11px;
+	}
 }
 @media only screen and (max-width: 414px){
 	.green-form {
@@ -284,10 +359,10 @@
 @media only screen and (max-width: 380px){
 	.green-form {
 		width: 215px;
-		margin: 15px 62px;
+		margin: 15px auto;
 	}
 	.form-opacity button {
-		margin: 7px 62px;
+		margin: 7px auto;
 	}
 	.green-form.forma_games {
 		margin: 15px auto;
@@ -296,11 +371,19 @@
 		margin: 7px auto;
 	}
 	.bg-h1 h1 {
-		font-size: 23px;
+		font-size: 30px;
 	}
 	.form-opacity.form_gray.popup_input {
 		input{
 			min-width: 250px;
 		}
+	}
+	.form-text p{
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 350px){
+	.city{
+		left: 0.3%;
 	}
 }

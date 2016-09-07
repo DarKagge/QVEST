@@ -13,9 +13,7 @@ body {
 a, button, input, textarea {
   text-decoration: none;
   outline: 0;
-  border: 0;
-  -webkit-transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
-  transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease; }
+  border: 0; }
   a:focus, button:focus, input:focus, textarea:focus {
     outline: 0;
     border: 0; }
@@ -103,7 +101,7 @@ header {
 
 .top-menu ul {
   float: right;
-  padding-top: 43px; }
+  padding-top: 30px; }
 
 .top-menu a {
   display: block;
@@ -146,12 +144,9 @@ header {
   display: block;
   width: 39px;
   height: 38px;
-  background-image: url("../img/social.png");
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all; }
+  background-image: url("../img/social.png"); }
   .social a:hover {
-    -webkit-transform: scale(1.1, 1.2) rotateY(360deg);
-    transform: scale(1.1, 1.2) rotateY(360deg); }
+    background-image: url("../img/social1.png") !important; }
 
 .social li {
   float: left;
@@ -252,7 +247,8 @@ header {
   font-size: 30px;
   line-height: 33px;
   text-transform: uppercase;
-  padding: 11px 9px 13px 6px; }
+  padding: 11px 9px 13px 6px;
+  text-align: right; }
 
 .form-opacity {
   border-bottom: 3px solid #fff;
