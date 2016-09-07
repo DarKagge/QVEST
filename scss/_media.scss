@@ -203,6 +203,10 @@
 			visibility: visible;
 		}
 	}
+	.white-popup .mfp-close{
+		right: 0;
+		top: -45px;
+	}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -217,6 +221,9 @@
 	}
 	.form-opacity {
 		max-height: 175px;
+	}
+	.popup_fix{
+		min-height: 400px;
 	}
 	.bg-h1 h1 {
 		font-size: 30px;
@@ -286,9 +293,14 @@
 		margin: 15px auto;
 	}
 	.form-opacity button {
-		margin: 7px 69px;
+		margin: 7px auto;
 	}
 	.bg-h1 h1 {
 		font-size: 23px;
+	}
+	.form-opacity.form_gray.popup_input {
+		input{
+			min-width: 250px;
+		}
 	}
 }

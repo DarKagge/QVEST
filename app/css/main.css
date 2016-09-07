@@ -103,7 +103,11 @@ body textarea:required:valid {
 .item-select .item-select_button {
   width: 100%;
   position: absolute;
-  top: 4px; }
+  top: 4px;
+  text-decoration: none;
+  text-align: center; }
+  .item-select .item-select_button:hover, .item-select .item-select_button:focus {
+    color: #fff; }
 
 .qvest-items {
   margin-top: 34px; }
@@ -331,7 +335,10 @@ body textarea:required:valid {
   .social {
     visibility: hidden; }
     .social.social_footer {
-      visibility: visible; } }
+      visibility: visible; }
+  .white-popup .mfp-close {
+    right: 0;
+    top: -45px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -343,6 +350,8 @@ body textarea:required:valid {
     margin: 6px 1px; }
   .form-opacity {
     max-height: 175px; }
+  .popup_fix {
+    min-height: 400px; }
   .bg-h1 h1 {
     font-size: 30px; }
   .form-opacity button {
@@ -384,9 +393,11 @@ body textarea:required:valid {
   .green-form.forma_games {
     margin: 15px auto; }
   .form-opacity button {
-    margin: 7px 69px; }
+    margin: 7px auto; }
   .bg-h1 h1 {
-    font-size: 23px; } }
+    font-size: 23px; }
+  .form-opacity.form_gray.popup_input input {
+    min-width: 250px; } }
 
 /* ============================ form css =========================== */
 #modal_callback_ok h3, #modal_callback_ok h4 {

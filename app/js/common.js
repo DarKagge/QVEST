@@ -36,6 +36,11 @@ $(function() {
 		$(".city-main").removeClass('clicked');
 		event.stopPropagation();
 	});
+	$('.item-select_button').magnificPopup({
+		type:'inline',
+		mainClass:'exit-popup',
+		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+	});
 });
 
 

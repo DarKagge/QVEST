@@ -1,3 +1,4 @@
+@import url(../libs/magnific-popup/dist/magnific-popup.css);
 body {
   font-size: 16px;
   min-width: 320px;
@@ -101,21 +102,37 @@ header {
   max-width: 197px; }
 
 .top-menu ul {
-  float: right; }
+  float: right;
+  padding-top: 43px; }
 
 .top-menu a {
+  display: block;
   color: #212121;
   font-family: Gilroybold;
   font-size: 16px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 9px 27px 9px 27px; }
   .top-menu a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #fff; }
+  .top-menu a.top-menu_hover__1:hover {
+    background-image: url("../img/li_1.png");
+    text-decoration: none;
+    background-position: center,center;
+    background-repeat: no-repeat; }
+  .top-menu a.top-menu_hover__2:hover {
+    background-image: url("../img/li_2.png");
+    text-decoration: none;
+    background-position: center,center;
+    background-repeat: no-repeat; }
+  .top-menu a.top-menu_hover__3:hover {
+    background-image: url("../img/li_3.png");
+    text-decoration: none;
+    background-position: center,center;
+    background-repeat: no-repeat; }
 
 .top-menu li {
-  float: left;
-  padding-top: 50px;
-  padding-right: 20px;
-  padding-left: 14px; }
+  float: left; }
 
 .social {
   position: absolute;
@@ -129,7 +146,12 @@ header {
   display: block;
   width: 39px;
   height: 38px;
-  background-image: url("../img/social.png"); }
+  background-image: url("../img/social.png");
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all; }
+  .social a:hover {
+    -webkit-transform: scale(1.1, 1.2) rotateY(360deg);
+    transform: scale(1.1, 1.2) rotateY(360deg); }
 
 .social li {
   float: left;
@@ -254,12 +276,27 @@ header {
     background-color: white;
     background-position: 5px center;
     background-repeat: no-repeat;
-    max-width: 202px; }
+    max-width: 202px;
+    -webkit-transition: .2s all;
+    transition: .2s all; }
     .form-opacity input[name="name"] {
       background-image: url("../img/name.png");
       margin-right: 12px; }
     .form-opacity input[name="phone"] {
       background-image: url("../img/phone.png"); }
+    .form-opacity input[name="mail"] {
+      background-image: url("../img/mail.png"); }
+    .form-opacity input:focus {
+      -webkit-box-shadow: 0 0 10px 0 #00a000;
+      box-shadow: 0 0 10px 0 #00a000; }
+      .form-opacity input:focus::-webkit-input-placeholder {
+        color: transparent; }
+      .form-opacity input:focus::-moz-placeholder {
+        color: transparent; }
+      .form-opacity input:focus:-moz-placeholder {
+        color: transparent; }
+      .form-opacity input:focus:-ms-input-placeholder {
+        color: transparent; }
   .form-opacity button {
     margin-bottom: 16px;
     margin-left: 0px; }
@@ -297,3 +334,55 @@ header {
     color: white;
     cursor: pointer;
     text-decoration: none; }
+
+.popup_fix {
+  position: relative;
+  margin: auto;
+  max-width: 407px;
+  min-height: 355px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #fff; }
+
+.popup-top {
+  background-color: #00b37a;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px; }
+  .popup-top p {
+    color: white;
+    font-family: Gilroybold;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 14px 23px 11px 22px;
+    line-height: 23px; }
+  .popup-top span {
+    font-size: 24px; }
+
+.popup-bottom {
+  position: relative; }
+
+.form-opacity.form_gray.popup_input {
+  position: absolute;
+  width: 100%;
+  top: 32px;
+  right: 0px;
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+  .form-opacity.form_gray.popup_input input {
+    min-width: 340px;
+    margin: 0;
+    margin-bottom: 15px; }
+  .form-opacity.form_gray.popup_input button {
+    width: 95%;
+    margin-left: 10px;
+    padding: 8px 3px 8px 3px;
+    margin-top: 19px; }
+
+.white-popup .mfp-close {
+  right: -60px;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-image: url("../img/close.png");
+  opacity: 1;
+  color: #fff; }

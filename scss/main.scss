@@ -125,6 +125,11 @@ body textarea:required:valid{
     width: 100%;
     position: absolute;
     top: 4px;
+    text-decoration: none;
+    text-align: center;
+    &:hover,&:focus{
+      color: #fff;
+    }
 }
 .qvest-items{
     margin-top: 34px;
