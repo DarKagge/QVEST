@@ -131,35 +131,36 @@ body textarea:required:valid {
 
 .footer-mid {
   position: relative;
-  top: 47px;
+  margin-top: 47px;
   left: auto;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 15px; }
 
-.social.social_footer {
+.social_footer {
   position: relative;
   top: 7px;
   right: auto;
   text-align: center; }
-  .social.social_footer li {
+  .social_footer li {
     float: none;
     display: inline-block;
     margin: 0 5.5px; }
-  .social.social_footer a {
+  .social_footer a {
     background-image: url(../img/footer_socila.png); }
 
-.footet-right {
+.footer-right {
   position: relative;
   margin-top: 91px;
   margin-bottom: 5px;
   right: 29px;
   text-align: right; }
-  .footet-right h3 {
+  .footer-right h3 {
     color: white;
     font-family: Gilroybold;
     font-size: 17px;
     line-height: 18px;
     text-transform: uppercase; }
-  .footet-right h2 {
+  .footer-right h2 {
     color: white;
     font-family: Gilroybold;
     font-size: 30px;
@@ -301,7 +302,7 @@ header.taxi-bg {
   .city {
     top: 110px;
     color: #fff;
-    left: 11.3%; }
+    left: 10.3%; }
     .city:hover {
       background-image: url("../img/citybg1.png");
       color: #000a00; }
@@ -448,9 +449,23 @@ header.taxi-bg {
   .footer {
     background-size: cover; } }
 
+@media only screen and (max-width: 767px) {
+  .footer-right {
+    position: absolute;
+    top: 0px;
+    right: 15px; } }
+
 @media only screen and (max-width: 1086px) {
   .bg-h1.bg-h1_size h1 {
     font-size: 35px; } }
+
+@media only screen and (max-width: 882px) {
+  .footer-left p {
+    font-size: 13px; }
+  .footer-right h3 {
+    font-size: 13px; }
+  .footer-right h2 {
+    font-size: 25px; } }
 
 @media only screen and (max-width: 747px) {
   .bg-h1 {
@@ -522,6 +537,14 @@ header.taxi-bg {
 @media only screen and (max-width: 430px) {
   .form-text p {
     font-size: 11px; } }
+
+@media only screen and (max-width: 421px) {
+  .footer-left {
+    margin-left: 0px; }
+    .footer-left p {
+      font-size: 15px; }
+  .footer-right {
+    right: 0px; } }
 
 @media only screen and (max-width: 414px) {
   .green-form {

@@ -44,7 +44,7 @@
 	.city{
 		top:110px;
 		color: #fff;
-		left: 11.3%;
+		left: 10.3%;
 		&:hover{
 			background-image: url("../img/citybg1.png");
 			color: #000a00;
@@ -232,9 +232,32 @@
 		background-size: cover;
 	}
 }
+@media only screen and (max-width : 767px){
+	.footer-right{
+		position: absolute;
+		top:0px;
+		right: 15px;
+	}
+}
 @media only screen and (max-width : 1086px){
 	.bg-h1.bg-h1_size h1{
 		font-size: 35px;
+	}
+}
+@media only screen and (max-width : 882px){
+	.footer-left{
+		p{
+			font-size: 13px;
+		}
+	}
+	.footer-right{
+		h3{
+			font-size: 13px;
+		}
+		h2{
+			font-size: 25px;
+		}
+
 	}
 }
 @media only screen and (max-width : 747px){
@@ -338,6 +361,17 @@
 @media only screen and (max-width: 430px){
 	.form-text p{
 		font-size: 11px;
+	}
+}
+@media only screen and (max-width: 421px){
+	.footer-left{
+		margin-left: 0px;
+		p{
+			font-size: 15px;
+		}
+	}
+	.footer-right{
+		right: 0px;
 	}
 }
 @media only screen and (max-width: 414px){

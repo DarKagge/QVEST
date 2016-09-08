@@ -154,12 +154,13 @@ body textarea:required:valid{
 }
 .footer-mid{
   position: relative;
-  top: 47px;
+  margin-top: 47px;
   left: auto;
   text-align: center;
+  padding-bottom: 15px;
 
 }
-.social.social_footer{
+.social_footer{
   position: relative;
   top: 7px;
   right: auto;
@@ -173,7 +174,7 @@ body textarea:required:valid{
     background-image: url(../img/footer_socila.png);
   }
 }
-.footet-right{
+.footer-right{
   position: relative;
   margin-top: 91px;
   margin-bottom: 5px;
