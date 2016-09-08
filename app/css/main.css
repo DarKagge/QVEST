@@ -434,7 +434,7 @@ header.taxi-bg {
     padding: 0;
     text-align: center; }
   .form-opacity .button-green {
-    width: 60%;
+    width: 50%;
     min-width: 202px;
     margin: auto; }
   .form-opacity button {
@@ -523,7 +523,8 @@ header.taxi-bg {
   .form-opacity input[name="name"] {
     margin: 6px 1px; }
   .form-opacity {
-    max-height: 175px; }
+    max-height: 175px;
+    padding: 20px; }
   .popup_fix {
     min-height: 400px; }
   .bg-h1 h1 {
@@ -538,7 +539,9 @@ header.taxi-bg {
   .title-qvest {
     background-size: 100%; }
     .title-qvest h2 {
-      font-size: 26px; } }
+      font-size: 26px; }
+  .button-green.button-green_width {
+    min-width: 224px; } }
 
 @media only screen and (max-width: 430px) {
   .form-text p {
