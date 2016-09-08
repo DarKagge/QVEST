@@ -44,7 +44,7 @@
 	.city{
 		top:110px;
 		color: #fff;
-		left: 8.3%;
+		left: 11.3%;
 		&:hover{
 			background-image: url("../img/citybg1.png");
 			color: #000a00;
@@ -247,7 +247,20 @@
 		right: 65%;
 	}
 }
-
+@media only screen and (max-width : 617px){
+	.howit__item {
+		ul{
+			position: relative;
+			top:30px;
+			left: 0px;
+		}
+		h3{
+			position: relative;
+			top: 0px;
+			left:0px;
+		}
+	}
+}
 @media only screen and (max-width : 600px) {
 	.bg-h1{
 		background-size: 103%;
@@ -313,7 +326,7 @@
 	.title-qvest{
 		background-size: 100%;
 		h2{
-			font-size: 30px;
+			font-size: 26px;
 		}
 	}
 	// 100% ширина окна
@@ -355,6 +368,13 @@
 		}
 	}
 
+}
+@media only screen and (max-width : 405px){
+	.howit__item{
+		li{
+			margin-bottom: 5px;
+		}
+	}
 }
 @media only screen and (max-width: 380px){
 	.green-form {
