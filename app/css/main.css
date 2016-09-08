@@ -168,7 +168,7 @@ body textarea:required:valid {
     text-transform: uppercase; }
 
 .bg-h1.bg-h1_size h1 {
-  font-size: 47px;
+  font-size: 46px;
   padding-top: 15px; }
 
 .form-text.form-text_hide p {
@@ -457,7 +457,7 @@ header.taxi-bg {
 
 @media only screen and (max-width: 1086px) {
   .bg-h1.bg-h1_size h1 {
-    font-size: 35px; } }
+    font-size: 29px; } }
 
 @media only screen and (max-width: 882px) {
   .footer-left p {
