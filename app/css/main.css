@@ -434,7 +434,9 @@ header.taxi-bg {
     padding: 0;
     text-align: center; }
   .form-opacity .button-green {
-    width: 60%; }
+    width: 60%;
+    min-width: 202px;
+    margin: auto; }
   .form-opacity button {
     margin: 4px auto; }
   .bg-h1 h1 {
